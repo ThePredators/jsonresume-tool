@@ -1,7 +1,7 @@
 {
-  "name": "jsonresume-demo",
+  "name": "jsonresume-tool",
   "version": "1.0.0",
-  "description": "Json Resume Demo App",
+  "description": "Json Resume Tool App",
   "main": "index.js",
   "scripts": {
     "dl": "curl -sL https://gitconnected.com/v1/portfolio/$GH_UN >> resume.json",
