@@ -1,7 +1,7 @@
 {
   "name": "jsonresume-tool",
   "version": "1.0.0",
-  "description": "Json Resume Tool App",
+  "description": "Json Resume Tool for macOS",
   "main": "index.js",
   "scripts": {
     "dl": "curl -sL https://gitconnected.com/v1/portfolio/$GH_UN >> resume.json",
@@ -12,7 +12,7 @@
     "start:html": "npm run clean:html && npm run export:html && npm run open:html",
     "clean:html": "rm -f resume_$THEME.html",
     "export:html": "resume export resume_$THEME.html --theme $THEME",
-    "open:html": "mv resume_$THEME.html index.html && serve"
+    "open:html": "mv resume_$THEME.html index.html && open -a 'Google Chrome' http://localhost:3000 && serve"
   },
   "author": "SBENG",
   "license": "MIT",

@@ -1,4 +1,4 @@
-# [JsonResume Tool App](https://jsonresume.org/getting-started/)
+# [JsonResume Tool (macOS Only)](https://jsonresume.org/getting-started/)
 
 
 ## How to use ?
