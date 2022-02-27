@@ -1,0 +1,33 @@
+{
+  "name": "jsonresume",
+  "version": "1.0.0",
+  "description": "Json Resume Demo App",
+  "main": "index.js",
+  "scripts": {
+    "dl": "curl -sL https://gitconnected.com/v1/portfolio/$GH_UN >> resume.json",
+    "start": "npm run clean && npm run export:pdf && npm run open",
+    "clean": "rm -f resume_$THEME.pdf",
+    "export:pdf": "resume export resume_$THEME.pdf --theme $THEME",
+    "open": "open resume_$THEME.pdf",
+    "start:html": "npm run clean:html && npm run export:html",
+    "clean:html": "rm resume_$THEME.html",
+    "export:html": "resume export resume_$THEME.html --theme $THEME",
+    "open:html": "http-server ."
+  },
+  "author": "SBENG",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.0",
+    "jsonresume-theme-actual": "^0.1.6",
+    "jsonresume-theme-caffeine": "^1.2.3",
+    "jsonresume-theme-class": "^0.1.2",
+    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-flat": "^0.3.7",
+    "jsonresume-theme-kendall": "^0.2.0",
+    "jsonresume-theme-onepage": "0.0.3",
+    "jsonresume-theme-paper": "^0.5.0",
+    "jsonresume-theme-spartan": "^0.3.0",
+    "jsonresume-theme-stackoverflow": "^1.4.0",
+    "resume-cli": "^3.0.6"
+  }
+}
