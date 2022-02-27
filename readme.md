@@ -8,7 +8,15 @@
 ```sh
 GH_UN="<YOUR_GITHUB_USERNAME>" npm run dl
 ```
-3. Run the export command with the theme you want (e.g for Elegant theme)
+
+### Make PDF
+Run the export command with the theme you want (e.g for Elegant theme)
 ```sh
-THEME="elegant" npm run start 
+THEME="elegant" npm start 
+```
+
+### MAKE HTML file
+Run the export command with the theme you want (e.g for Elegant theme)
+```sh
+THEME="elegant" npm run start:html
 ```

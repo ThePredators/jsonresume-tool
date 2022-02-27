@@ -1,5 +1,5 @@
 {
-  "name": "jsonresume",
+  "name": "jsonresume-demo",
   "version": "1.0.0",
   "description": "Json Resume Demo App",
   "main": "index.js",
@@ -9,15 +9,14 @@
     "clean": "rm -f resume_$THEME.pdf",
     "export:pdf": "resume export resume_$THEME.pdf --theme $THEME",
     "open": "open resume_$THEME.pdf",
-    "start:html": "npm run clean:html && npm run export:html",
-    "clean:html": "rm resume_$THEME.html",
+    "start:html": "npm run clean:html && npm run export:html && npm run open:html",
+    "clean:html": "rm -f resume_$THEME.html",
     "export:html": "resume export resume_$THEME.html --theme $THEME",
-    "open:html": "http-server ."
+    "open:html": "mv resume_$THEME.html index.html && serve"
   },
   "author": "SBENG",
   "license": "MIT",
   "dependencies": {
-    "http-server": "^14.1.0",
     "jsonresume-theme-actual": "^0.1.6",
     "jsonresume-theme-caffeine": "^1.2.3",
     "jsonresume-theme-class": "^0.1.2",
@@ -28,6 +27,7 @@
     "jsonresume-theme-paper": "^0.5.0",
     "jsonresume-theme-spartan": "^0.3.0",
     "jsonresume-theme-stackoverflow": "^1.4.0",
-    "resume-cli": "^3.0.6"
+    "resume-cli": "^3.0.6",
+    "serve": "^13.0.2"
   }
 }
