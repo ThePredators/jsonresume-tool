@@ -26,6 +26,15 @@ Run the export command with the theme you want (e.g for Elegant theme)
 THEME="elegant" npm run start:html
 ```
 
+## Try with demo `resume.json` ?
+
+I set a sample-resume.json to show how this works. To test the demo resume just run the following :
+```sh
+npm run demo
+```
+
+Then use the commands described in section "How to use".
+
 ## Themes :
 
 This is the list of the added themes to this tool.

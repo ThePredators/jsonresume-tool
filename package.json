@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dl": "curl -sL https://gitconnected.com/v1/portfolio/$GH_UN > resume.json",
+    "demo": "rm -f resume.json && mv sample-resume.json resume.json",
     "start": "npm run clean && npm run export:pdf && npm run open",
     "clean": "rm -f resume_$THEME.pdf",
     "export:pdf": "resume export resume_$THEME.pdf --theme $THEME",
