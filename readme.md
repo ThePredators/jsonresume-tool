@@ -57,4 +57,17 @@ npm i --save jsonresume-theme-<YOUR_THEME>
 ```
 2. Run the export commands by specifing your theme.
 
+## Troubleshoots :
+
+For **Apple macOS M1*** you will need chromium, to install it use :
+```sh
+brew install chromium
+```
+
+then add to .zshrc or .bachrc :
+```sh
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export PUPPETEER_EXECUTABLE_PATH=`which chromium`
+```
+
 Enjoy :)
