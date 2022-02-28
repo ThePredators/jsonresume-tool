@@ -59,7 +59,7 @@ npm i --save jsonresume-theme-<YOUR_THEME>
 
 ## Troubleshoots :
 
-For **Apple macOS M1*** you will need chromium, to install it use :
+For **Apple macOS M1** you will need chromium, to install it use :
 ```sh
 brew install chromium
 ```
