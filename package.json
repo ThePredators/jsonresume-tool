@@ -11,7 +11,7 @@
     "export:pdf": "resume export resume_$THEME.pdf --theme $THEME",
     "open": "open resume_$THEME.pdf",
     "start:html": "npm run clean:html && npm run export:html && npm run open:html",
-    "clean:html": "rm -f resume_$THEME.html",
+    "clean:html": "rm -f index.html",
     "export:html": "resume export resume_$THEME.html --theme $THEME",
     "open:html": "mv resume_$THEME.html index.html && open -a 'Google Chrome' http://localhost:3000 && serve"
   },
