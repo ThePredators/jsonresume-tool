@@ -24,11 +24,14 @@
     "jsonresume-theme-elegant": "^1.16.1",
     "jsonresume-theme-flat": "^0.3.7",
     "jsonresume-theme-kendall": "^0.2.0",
-    "jsonresume-theme-onepage": "0.0.3",
+    "jsonresume-theme-onepage": "^0.0.3",
     "jsonresume-theme-paper": "^0.5.0",
     "jsonresume-theme-spartan": "^0.3.0",
     "jsonresume-theme-stackoverflow": "^1.4.0",
     "resume-cli": "^3.0.6",
     "serve": "^13.0.2"
+  },
+  "resolutions": {
+    "**/puppeteer": "13.5.1"
   }
 }
